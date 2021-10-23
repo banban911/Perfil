@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
 import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
-import AppLayout from "./components/layout/AppLayout";
+import App from "./App";
 
 ReactDOM.render(
   <HashRouter>
-    <AppLayout />
+    <App />
   </HashRouter>,
   document.getElementById("root")
 );

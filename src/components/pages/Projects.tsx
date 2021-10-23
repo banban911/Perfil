@@ -60,7 +60,7 @@ const cardMedia: cardMediaProps[] = [
     title: "ED, HANU",
     link: "https://banban911.github.io/15A17_Hanu/",
     description:
-      "During waiting for graduation ceremory, I cloned the landing page of my department website.",
+      "During waiting for graduation ceremory, I cloned the landing page of my department website which is the English Department, HANU",
     sourceCode: "https://github.com/banban911/15A17_Hanu",
     techs: [
       "https://img.icons8.com/color/48/000000/javascript--v1.png",
