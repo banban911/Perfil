@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
 import "./index.scss";
-import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 
 ReactDOM.render(
@@ -11,4 +10,3 @@ ReactDOM.render(
   </HashRouter>,
   document.getElementById("root")
 );
-reportWebVitals();
