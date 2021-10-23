@@ -1,0 +1,126 @@
+// import React, {
+//   createContext,
+//   useContext,
+//   useState,
+//   useEffect,
+//   // ReactNode,
+//   ReactChild,
+// } from "react";
+
+// import {
+//   createUserWithEmailAndPassword,
+//   signInWithEmailAndPassword,
+//   sendPasswordResetEmail,
+//   updateEmail,
+//   updatePassword,
+//   signOut,
+//   onAuthStateChanged,
+// } from "firebase/auth";
+// import { auth } from "../../firebase/AuthFirebase";
+// export const AuthContext = createContext(async () => {
+//   return;
+// });
+
+// const AuthContextProvider = (children: any) => {
+//   const [loading, setLoading] = useState(true);
+//   const [email, setEmail] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [newEmail, setNewEmail] = useState("");
+//   const [newPassword, setNewPassword] = useState("");
+//   const user = auth.currentUser;
+//   const signup = (email: string, password: string) => {
+//     return createUserWithEmailAndPassword(auth, email, password)
+//       .then((userCredential) => {
+//         // Signed in
+//         const user = userCredential.user;
+//         // ...
+//       })
+//       .catch((error) => {
+//         const errorCode = error.code;
+//         const errorMessage = error.message;
+//         // ..
+//       });
+//   };
+
+//   const login = (email: string, password: string) => {
+//     return signInWithEmailAndPassword(auth, email, password)
+//       .then((userCredential) => {
+//         // Signed in
+//         const user = userCredential.user;
+//         // ...
+//       })
+//       .catch((error) => {
+//         const errorCode = error.code;
+//         const errorMessage = error.message;
+//       });
+//   };
+
+//   const logout = (auth: any) => {
+//     signOut(auth)
+//       .then(() => {
+//         // Sign-out successful.
+//       })
+//       .catch((error) => {
+//         // An error happened.
+//       });
+//   };
+
+//   const updateEmail = (user: any, newEmail: string): any => {
+//     return updateEmail(user, newEmail)
+//       .then(() => {
+//         // Email updated!
+//         // ...
+//       })
+//       .catch((error: string) => {
+//         console.log(error);
+//       });
+//   };
+
+//   const updatePassword = (user: any, newPassword: string): any => {
+//     return updatePassword(user, newPassword)
+//       .then(() => {
+//         // Update successful.
+//       })
+//       .catch((error: string) => {
+//         console.log(error);
+//       });
+//   };
+
+//   const resetPassword = (auth: any, email: string) => {
+//     return sendPasswordResetEmail(auth, email)
+//       .then(() => {
+//         // Password reset email sent!
+//         // ..
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   };
+
+//   useEffect(() => {
+//     const unsubscribe = onAuthStateChanged(auth, (user: any) => {
+//       setLoading(false);
+//     });
+
+//     return unsubscribe;
+//   }, []);
+
+//   const AuthContextData = {
+//     login,
+//     signup,
+//     logout,
+//     resetPassword,
+//     updatePassword,
+//     updateEmail,
+//   };
+
+//   return (
+//     <div>
+//       <AuthContext.Provider value={AuthContextData}>
+//         {!loading && children}
+//       </AuthContext.Provider>
+//     </div>
+//   );
+// };
+
+// export default AuthContextProvider;

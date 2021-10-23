@@ -1,0 +1,158 @@
+//HOME stylesheet
+
+.home_container {
+  display: flex;
+}
+
+.name {
+  color: #31759a;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Noto Serif", serif;
+  margin: 0;
+}
+
+.my_images > div {
+  padding: 1.5rem 5rem;
+}
+
+#imageClipPath {
+  clip-path: path(
+    "M459.45 118.048C329.199 -54.5096 245.952 2.01835 208.655 48.0553C129.52 145.736 -22.2002 368.877 4.00296 479.993C36.7569 618.889 326.522 505.049 435.781 465.559C545.041 426.069 622.263 333.744 459.45 118.048Z"
+  );
+}
+
+// PROJECTS stylesheet
+.cardsProject {
+  display: flex;
+  min-height: calc(100vh - 56px); // 100vh - height of Xnavbar
+  width: 100%;
+
+  & > * {
+    flex: 0 0 25%;
+    padding: 1rem;
+  }
+}
+
+// SKILSS stylesheet
+
+.skills_container {
+  display: flex;
+
+  & > * {
+    flex: 0 0 50%;
+  }
+}
+
+.skills_illustration {
+  padding: 1rem 4rem;
+}
+
+.circle_tick_svg0 {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.2s;
+  animation: circle_tick_svg 0.6s 0.5s ease-in-out infinite alternate;
+}
+.circle_tick_svg1 {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.2s;
+  animation: circle_tick_svg 0.6s 0.2s ease-in-out infinite alternate;
+}
+.circle_tick_svg2 {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.2s;
+  animation: circle_tick_svg 0.6s 0.3s ease-in-out infinite alternate;
+}
+.circle_tick_svg3 {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.2s;
+  animation: circle_tick_svg 0.6s 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes circle_tick_svg {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: rgb(17, 161, 89);
+  }
+}
+
+// RESPONSIVE FOR TABLET
+
+@media screen and (max-width: 768px) {
+  //HOME
+
+  .home_container {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .name {
+    color: #31759a;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .my_images {
+    & > div {
+      padding: 1rem 2.5rem;
+    }
+  }
+  // PROJECT
+  .cardsProject {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 0 0 50%;
+    }
+  }
+
+  //SKILLS
+
+  .skills_container {
+    display: flex;
+  }
+
+  .skills_content {
+    flex: 1;
+  }
+
+  .skills_illustration {
+    position: relative;
+  }
+}
+
+//RESPONSIVE FOR MOBILE
+
+@media screen and (max-width: 576px) {
+  // HOME responsive small
+
+  .name {
+    font-size: 25px;
+  }
+
+  #imageClipPath {
+    // display: none;
+    clip-path: path(
+      "M210.292 54.5933C150.83 -24.4165 112.826 1.46628 95.7991 22.5454C59.6721 67.2711 -9.59139 169.442 2.37092 220.319C17.3238 283.916 149.608 231.792 199.487 213.71C249.366 195.629 284.62 153.355 210.292 54.5933Z"
+    );
+  }
+
+  // PROJECT responsive small
+  .cardsProject {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 0 0 100%;
+    }
+  }
+
+  //SKILLS
+
+  .skills_container {
+    flex-flow: column;
+  }
+
+  .skills_illustration {
+    width: 60%;
+    padding: 0;
+  }
+}
