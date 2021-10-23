@@ -15,16 +15,16 @@ import RedditIcon from "@mui/icons-material/Reddit";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 //
-import hanuLib1 from "../../image/hanuLib1.jpg";
-import hanu2 from "../../image/hanu2.jpeg";
-import hanu1 from "../../image/hanu1.jpeg";
-import hanu3 from "../../image/hanu3.jpg";
-import hanu4 from "../../image/hanu4.jpg";
-import hanu5 from "../../image/hanu5.jpg";
-import myClass2 from "../../image/15a17_speaking.jpg";
-import myClass1 from "../../image/class.jpg";
-import professora from "../../image/professora.jpg";
-import clipPathShape1 from "../../image/clipPathShape1.svg";
+import hanuLib1 from "../image/hanuLib1.jpg";
+import hanu2 from "../image/hanu2.jpeg";
+import hanu1 from "../image/hanu1.jpeg";
+import hanu3 from "../image/hanu3.jpg";
+import hanu4 from "../image/hanu4.jpg";
+import hanu5 from "../image/hanu5.jpg";
+import myClass2 from "../image/15a17_speaking.jpg";
+import myClass1 from "../image/class.jpg";
+import professora from "../image/professora.jpg";
+import clipPathShape1 from "../image/clipPathShape1.svg";
 
 import ImageListHome from "../imageList/ImageListHome";
 
