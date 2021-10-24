@@ -23,7 +23,7 @@ function Copyright(props: any) {
       {...props}
     >
       {"Copyright © "}
-      <LinkComp color='inherit' href='https://github.io/Notem'>
+      <LinkComp color='inherit' href='https://github.io/banban911/Perfil'>
         Notem
       </LinkComp>{" "}
       {new Date().getFullYear()}

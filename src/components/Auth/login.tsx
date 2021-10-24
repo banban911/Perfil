@@ -29,7 +29,7 @@ function Copyright(props: any) {
       {...props}
     >
       {"Copyright © "}
-      <LinkComp color='inherit'>Notem</LinkComp> {new Date().getFullYear()}
+      <LinkComp color='inherit'>Perfil</LinkComp> {new Date().getFullYear()}
       <Button>
         <Link to='/'>Back to homepage</Link>
       </Button>
