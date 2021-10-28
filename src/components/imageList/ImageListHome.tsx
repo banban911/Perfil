@@ -1,5 +1,4 @@
-import React, { FunctionComponent } from "react";
-import Box from "@mui/material/Box";
+import React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
@@ -8,7 +7,7 @@ interface image {
   title: string;
 }
 
-export default function ImageListHome<FunctionComponent>({ itemData }: any) {
+export default function ImageListHome({ itemData }: any) {
   return (
     <ImageList variant='masonry' cols={3} gap={8}>
       {itemData.map((item: image) => (

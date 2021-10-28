@@ -1,40 +1,36 @@
-import React, { FunctionComponent } from "react";
-import { Link, Switch, Route, RouteComponentProps } from "react-router-dom";
-
-//
-import Routes from "../../config/Routes";
-import IRoute from "../../interfaces/IRoute";
-//
-
-import { styled, useTheme, Theme, CSSObject } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import MuiDrawer from "@mui/material/Drawer";
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Tooltip from "@mui/material/Tooltip";
-import List from "@mui/material/List";
-import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+// Icons
+import AccountCircleIcon from "@mui/icons-material/AccountCircleOutlined";
+import BackupIcon from "@mui/icons-material/BackupOutlined";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import CloudIcon from "@mui/icons-material/CloudOutlined";
+import CodeIcon from "@mui/icons-material/CodeOutlined";
+import WebIcon from "@mui/icons-material/DashboardOutlined";
+import CalendarIcon from "@mui/icons-material/EventOutlined";
+import FileDownloadIcon from "@mui/icons-material/FileDownloadOutlined";
+import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafetyOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/SearchOutlined";
+import SettingsIcon from "@mui/icons-material/SettingsOutlined";
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
+import Divider from "@mui/material/Divider";
+import MuiDrawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-// Icons
-import AccountCircleIcon from "@mui/icons-material/AccountCircleOutlined";
-import CodeIcon from "@mui/icons-material/CodeOutlined";
-import WebIcon from "@mui/icons-material/DashboardOutlined";
-import SettingsIcon from "@mui/icons-material/SettingsOutlined";
-import SearchIcon from "@mui/icons-material/SearchOutlined";
-import BackupIcon from "@mui/icons-material/BackupOutlined";
-import FileDownloadIcon from "@mui/icons-material/FileDownloadOutlined";
-import MailIcon from "@mui/icons-material/EmailOutlined";
-import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafetyOutlined";
-import CloudIcon from "@mui/icons-material/CloudOutlined";
-import CalendarIcon from "@mui/icons-material/EventOutlined";
+//
+import { CSSObject, styled, Theme, useTheme } from "@mui/material/styles";
+import Toolbar from "@mui/material/Toolbar";
+import Tooltip from "@mui/material/Tooltip";
+import React, { FunctionComponent } from "react";
+import { Link, Route, RouteComponentProps, Switch } from "react-router-dom";
+//
+import Routes from "../../config/Routes";
+import IRoute from "../../interfaces/IRoute";
 import Footer from "../footer/Footer";
 import Navigation from "./Navigation";
 
@@ -222,8 +218,8 @@ const Navbars: FunctionComponent = () => {
         <Divider />
         <List>
           {["Overview", "Skills", "Projects"].map((text: string, index) => (
-            <Link to={text === "Overview" ? "./" : `./${text}`}>
-              <ListItem button key={index}>
+            <Link key={index} to={text === "Overview" ? "./" : `./${text}`}>
+              <ListItem button>
                 <ListItemIcon>{renderSwitchIcon(text)}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>

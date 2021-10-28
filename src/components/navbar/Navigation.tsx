@@ -1,17 +1,16 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
-import "./style.scss";
 import {
-  Typography,
-  FormControl,
-  Select,
-  MenuItem,
-  Button,
-  Chip,
   Box,
+  Button,
+  FormControl,
+  MenuItem,
+  Select,
+  Typography,
 } from "@mui/material";
-import WelcomeMessage from "../welcome/WelcomeMessage";
+import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../contexts/ThemeContext";
+import WelcomeMessage from "../welcome/WelcomeMessage";
+import "./style.scss";
 
 function Footer() {
   //state

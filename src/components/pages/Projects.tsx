@@ -1,15 +1,7 @@
+import { Box } from "@mui/material";
 import React from "react";
 import CardProject from "../card/CardProject";
-import { Box } from "@mui/material";
 import "./style.scss";
-
-// <img src='https://img.icons8.com/color/48/000000/react-native.png' />
-// <img src='https://img.icons8.com/color/48/000000/nodejs.png' />
-// <img src='https://img.icons8.com/color/48/000000/typescript.png' />
-// <img src='https://img.icons8.com/color/48/000000/javascript--v1.png' />
-// <img src='https://img.icons8.com/color/48/000000/sass.png' />
-// <img src='https://img.icons8.com/plasticine/100/000000/api.png' />
-const icons8_baseUrl = "https://img.icons8.com/color/";
 
 interface cardMediaProps {
   description: string;

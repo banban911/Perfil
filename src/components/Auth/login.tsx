@@ -1,6 +1,4 @@
-import React, { useRef, useState, useContext } from "react";
-// import { AuthContext } from "../contexts/AuthContext";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -16,11 +14,6 @@ import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 function Copyright(props: any) {
-  // const { login } = useContext(AuthContext);
-  // const [error, setError] = useState("");
-  // const [loading, setLoading] = useState(false);
-  // const history = useHistory();
-
   return (
     <Typography
       variant='body2'
@@ -41,19 +34,6 @@ function Copyright(props: any) {
 const theme = createTheme();
 
 export default function Login() {
-  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-  //   const data = new FormData(event.currentTarget);
-  //   // eslint-disable-next-line no-console
-  //   try {
-  //     setError("")
-  //     setLoading(true)
-  //     await login(data.get('email'), data.get('password''))
-  //   } catch (error :string) {
-  //     setError(error)
-  //   }
-  // };
-
   return (
     <ThemeProvider theme={theme}>
       <Grid
@@ -159,11 +139,4 @@ export default function Login() {
       </Grid>
     </ThemeProvider>
   );
-}
-function setLoading(arg0: boolean) {
-  throw new Error("Function not implemented.");
-}
-
-function setError(arg0: string) {
-  throw new Error("Function not implemented.");
 }

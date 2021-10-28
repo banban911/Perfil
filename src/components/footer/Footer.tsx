@@ -1,5 +1,6 @@
 import React from "react";
 import HoverRating from "../rating/HoverRating";
+import { Link } from "@mui/material";
 
 const Footer = () => {
   return (
@@ -18,24 +19,21 @@ const Footer = () => {
       <div className='otherContact'>
         <ul>
           <li>
-            <a href='#'>Privacy</a>
+            <a href='https://reactjs.org/'>Privacy</a>
           </li>
           <li>
-            <a href='#'>APIs</a>
+            <a href='https://reactjs.org/'>APIs</a>
           </li>
           <li>
-            <a href='#'>@Mui</a>
+            <a href='https://mui.com/'>@Mui</a>
           </li>
           <li>
-            <a href='#'>@unDraw</a>
+            <a href='https://undraw.co/'>@unDraw</a>
           </li>
           <li>
-            <a href='#'></a>
-          </li>
-          <li>
-            <a>
+            <Link>
               <HoverRating />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,20 +1,18 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { styled } from "@mui/material/styles";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ShareIcon from "@mui/icons-material/Share";
 import {
+  Button,
   Card,
-  CardMedia,
-  CardContent,
   CardActions,
+  CardContent,
+  CardMedia,
   Collapse,
   Typography,
-  Button,
 } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
-import ShareIcon from "@mui/icons-material/Share";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import { IconButtonProps } from "@mui/material/IconButton";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import IconButton, { IconButtonProps } from "@mui/material/IconButton";
+import { styled } from "@mui/material/styles";
+import React, { useState } from "react";
 import "./Card.scss";
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -32,10 +30,10 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
-interface mediaProps {
-  image: string;
-  title: string;
-}
+// interface mediaProps {
+//   image: string;
+//   title: string;
+// }
 
 export default function CardProject(props: any) {
   const [expanded, setExpanded] = useState(false);

@@ -1,36 +1,25 @@
-import React, { Fragment, useContext, useEffect, useState } from "react";
-import {
-  Box,
-  Typography,
-  Button,
-  Stack,
-  IconButton,
-  Chip,
-} from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import SendIcon from "@mui/icons-material/Send";
-
-import TwitterIcon from "@mui/icons-material/Twitter";
-import RedditIcon from "@mui/icons-material/Reddit";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-//
-import hanuLib1 from "../image/hanuLib1.jpg";
-import hanu2 from "../image/hanu2.jpeg";
+import RedditIcon from "@mui/icons-material/Reddit";
+import SendIcon from "@mui/icons-material/Send";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import { Box, Button, IconButton, Stack } from "@mui/material";
+import React, { Fragment } from "react";
+import myClass2 from "../image/15a17_speaking.jpg";
+import myClass1 from "../image/class.jpg";
 import hanu1 from "../image/hanu1.jpeg";
+import hanu2 from "../image/hanu2.jpeg";
 import hanu3 from "../image/hanu3.jpg";
 import hanu4 from "../image/hanu4.jpg";
 import hanu5 from "../image/hanu5.jpg";
-import myClass2 from "../image/15a17_speaking.jpg";
-import myClass1 from "../image/class.jpg";
+//
+import hanuLib1 from "../image/hanuLib1.jpg";
 import professora from "../image/professora.jpg";
-import clipPathShape1 from "../image/clipPathShape1.svg";
-
 import ImageListHome from "../imageList/ImageListHome";
-
 // context
-
 import "./style.scss";
+
 interface image {
   img: string;
   title: string;
@@ -75,16 +64,6 @@ const itemData: image[] = [
   },
 ];
 const Home = () => {
-  const [imageClipPathSize, setImageClipPathSize] = useState([]);
-
-  useEffect(() => {
-    const imageClipPath = document.getElementById("imageClipPath");
-    // const imageClipPathWidth = imageClipPath.clientWidth;
-    // const imageClipPathHeight = imageClipPath.clientHeight;
-
-    setImageClipPathSize([]);
-  }, []);
-
   return (
     <Fragment>
       <div className='home_container'>
