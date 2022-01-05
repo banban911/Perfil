@@ -29,7 +29,7 @@ import Tooltip from "@mui/material/Tooltip";
 import React, { FunctionComponent } from "react";
 import { Link, Route, RouteComponentProps, Switch } from "react-router-dom";
 //
-import Routes from "../../config/Routes";
+import Routes from "../../route/Routes";
 import IRoute from "../../interfaces/IRoute";
 import Footer from "../footer/Footer";
 import Navigation from "./Navigation";
@@ -226,24 +226,24 @@ const Navbars: FunctionComponent = () => {
             </Link>
           ))}
         </List>
-        <Divider />
-        <List>
+        {/* <Divider /> */}
+        {/* <List>
           {["Settings", "Upload", "Download"].map((text, index) => (
             <ListItem button key={index}>
               <ListItemIcon>{renderSwitchIcon(text)}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
-        </List>
-        <Divider />
-        <List>
+        </List> */}
+        {/* <Divider /> */}
+        {/* <List>
           {["Calendar", "Weather", "Covid-19"].map((text, index) => (
             <ListItem button key={index}>
               <ListItemIcon>{renderSwitchIcon(text)}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
-        </List>
+        </List> */}
       </Drawer>
       <Box component='main' sx={{ flexGrow: 1 }}>
         <DrawerHeader />
@@ -252,19 +252,11 @@ const Navbars: FunctionComponent = () => {
             <Route
               key={index}
               path={route.path}
-              exact={route.exact}
               render={(props: RouteComponentProps<any>) => <route.component />}
             />
           ))}
         </Switch>
-        <Box
-          sx={
-            {
-              // position: "absolute",
-              // bottom: 0,
-            }
-          }
-        >
+        <Box>
           <Footer />
         </Box>
       </Box>

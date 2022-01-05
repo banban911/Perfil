@@ -5,22 +5,19 @@ import IRoute from "../interfaces/IRoute";
 
 const Routes: IRoute[] = [
   {
-    path: "/",
-    name: "Overview",
-    component: Home,
-    exact: true,
-  },
-  {
     path: "/skills",
     name: "Skills",
     component: Skills,
-    exact: true,
   },
   {
     path: "/projects",
     name: "Projects",
     component: Projects,
-    exact: true,
+  },
+  {
+    path: "/",
+    name: "Overview",
+    component: Home,
   },
 ];
 

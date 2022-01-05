@@ -7,10 +7,10 @@ const Footer = () => {
     <div
       className='footer_container'
       style={{
-        backgroundColor: "rgba(20, 72, 124, 0.8)",
+        backgroundColor: "#1976d2",
         color: "#fff",
         fontSize: "1rem",
-        padding: "1rem",
+        padding: "0 1rem",
       }}
     >
       <div className='credit' style={{ marginRight: "2rem" }}>

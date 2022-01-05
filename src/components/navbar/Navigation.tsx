@@ -42,17 +42,21 @@ function Footer() {
       py={0}
     >
       <Typography variant='h6' component='h2'>
-        <Link to='./'>Note List</Link>
+        <Link to='./'>My Profile</Link>
       </Typography>
       <div className='welcomeMessage'>
         <Box textAlign='center' display='flex' alignItems='center'>
-          <WelcomeMessage position={position} />
+          <WelcomeMessage
+          // position={position}
+          />
           <Box ml={1}>
             <FormControl>
               <Select value={position} onChange={onPositionChange}>
-                <MenuItem value='Graduate'>Graduate</MenuItem>
-                <MenuItem value='Under Graduate'>Under Graduate</MenuItem>
-                <MenuItem value='Post Graduate'>Post Graduate</MenuItem>
+                <MenuItem value='Graduate'>Recruiter</MenuItem>
+                <MenuItem value='Under Graduate'>
+                  Uncertainty graduated student prepares to join labor market
+                </MenuItem>
+                <MenuItem value='Post Graduate'>Neon stranger</MenuItem>
               </Select>
             </FormControl>
           </Box>

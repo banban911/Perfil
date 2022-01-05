@@ -11,13 +11,14 @@ interface cardMediaProps {
   link: string;
   sourceCode: string;
   drawback: string;
+  functions: string;
 }
 
 const cardMedia: cardMediaProps[] = [
   {
     image:
       "https://www.nme.com/wp-content/uploads/2021/06/redvelvet-psycho-2019.jpg",
-    title: "Music app",
+    title: "Jogue (Music app)",
     techs: [
       "https://img.icons8.com/color/48/000000/javascript--v1.png",
       "https://img.icons8.com/color/48/000000/sass.png",
@@ -25,18 +26,38 @@ const cardMedia: cardMediaProps[] = [
     ],
     link: "https://banban911.github.io/Jogue/",
     description:
-      "Inspired by tutorial of Son Dang, founder of F8, this simple mobile-designed product provides user with basic functions of a music app named as play, back or forward song in playlist.",
+      "Inspired by tutorial of Mr.Son Dang, founder of F8, this simple mobile-designed product provides user with basic functions of a music app named as play, back or forward song in playlist.",
     sourceCode: "https://github.com/banban911/Jogue",
-    drawback: "The music source is somehow hard-code, so it has only ten items",
+    drawback: "Music source taken from no API, just hard-code",
+    functions: "",
   },
   {
     image:
       "https://archive.esportsobserver.com/wp-content/uploads/2020/10/Riot-Games-Four-Esports-One-Year-2020.jpg",
-    title: "Riot homepage clone",
+    title: "Briot (Cloned Riot's page)",
     link: "https://banban911.github.io/Briot/",
     description:
-      "First React-based app intergrated by riot APIs, I build a new collection included Riot homepage, LOL universe and LOL.vn.",
+      "First React-based app intergrated by riot APIs, I build up a new website in the base of Riot homepage, LOL universe page and LOL Vietnam homepage",
     sourceCode: "https://github.com/banban911/Briot",
+    techs: [
+      "https://img.icons8.com/color/48/000000/react-native.png",
+      "https://img.icons8.com/color/48/000000/javascript--v1.png",
+      "https://img.icons8.com/color/48/000000/python.png",
+      "https://img.icons8.com/color/48/000000/sass.png",
+      "https://img.icons8.com/color/50/000000/bootstrap.png",
+    ],
+    drawback:
+      "Fetching data includes multiple images take for a while, initial loading is quite slow.",
+    functions: "",
+  },
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/C511BAQHzmaGH1-wcsQ/company-background_10000/0/1563093073691?e=2159024400&v=beta&t=JzN1HhvT2W7gNyLIB4UE12J5REVCNj3qgQC-1qHr9B4",
+    title: "Beta (Cloned fb's homepage)",
+    link: "https://bimory.netlify.app/",
+    description:
+      "It tooks about a month and a half to complete this clone facebook app. I learn from scratch the noSQL database, CURL API beside connection between front-end and back-end (the very basic ones) and more.",
+    sourceCode: "https://github.com/banban911/Bindr",
     techs: [
       "https://img.icons8.com/color/48/000000/react-native.png",
       "https://img.icons8.com/color/48/000000/javascript--v1.png",
@@ -44,37 +65,25 @@ const cardMedia: cardMediaProps[] = [
       "https://img.icons8.com/color/50/000000/bootstrap.png",
     ],
     drawback:
-      "Scroll behavior work improperly, fetching data take much time or unified layout",
+      "Connection to the database is not speedy, even broken sometime. Update posts API works improperly, the former image preview remains in the latter open.",
+    functions: "",
   },
   {
     image:
-      "https://media-exp1.licdn.com/dms/image/C511BAQHzmaGH1-wcsQ/company-background_10000/0/1563093073691?e=2159024400&v=beta&t=JzN1HhvT2W7gNyLIB4UE12J5REVCNj3qgQC-1qHr9B4",
-    title: "ED, HANU",
-    link: "https://banban911.github.io/15A17_Hanu/",
+      "https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg",
+    title: "Diagon (Covid tracking)",
+    link: "https://banban911.github.io/diagon/",
     description:
-      "During waiting for graduation ceremory, I cloned the landing page of my department website which is the English Department, HANU",
-    sourceCode: "https://github.com/banban911/15A17_Hanu",
-    techs: [
-      "https://img.icons8.com/color/48/000000/javascript--v1.png",
-      "https://img.icons8.com/color/48/000000/sass.png",
-      "https://img.icons8.com/color/50/000000/bootstrap.png",
-    ],
-    drawback: "Css code is quite mess, height of carousel depends",
-  },
-  {
-    image:
-      "https://media-exp1.licdn.com/dms/image/C511BAQHzmaGH1-wcsQ/company-background_10000/0/1563093073691?e=2159024400&v=beta&t=JzN1HhvT2W7gNyLIB4UE12J5REVCNj3qgQC-1qHr9B4",
-    title: "Another app",
-    link: "https://banban911.github.io/Briot/",
-    description:
-      "In time waiting for graduation ceremory, I cloned the landing page of my department website. I hope it will be a game app",
+      "I built this app in the first day of the Covid year the third, using Covid API from postman and charts to visualize the data through.",
     sourceCode: "https://github.com/banban911/Briot",
     techs: [
+      "https://img.icons8.com/color/48/000000/react-native.png",
       "https://img.icons8.com/color/48/000000/javascript--v1.png",
-      "https://img.icons8.com/color/48/000000/sass.png",
-      "https://img.icons8.com/color/50/000000/bootstrap.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
     ],
-    drawback: "Not happen, guess it will be game app, and hei dude, do it",
+    drawback:
+      "Unparallel between the calendar duration and the obsevered durations, as when the latter changes the former stands still.",
+    functions: "",
   },
 ];
 
@@ -92,6 +101,7 @@ const Projects = () => {
             description={media.description}
             sourceCode={media.sourceCode}
             drawback={media.drawback}
+            functions={media.functions}
           />
         </Box>
       ))}

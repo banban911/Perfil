@@ -2,17 +2,16 @@ import { Box } from "@mui/system";
 import React from "react";
 
 interface WelcomeMessageProps {
-  position: string;
-  country?: string;
+  // position: string;
+  // country?: string;
 }
 
-const WelcomeMessage = ({
-  position,
-  country = "Vietname",
-}: WelcomeMessageProps) => {
+const WelcomeMessage = () => {
   return (
     <Box mb={1}>
-      Ola {position} from {country}
+      Ola, como esta
+      {/* {position} */}
+      {/* from {country} */}
     </Box>
   );
 };

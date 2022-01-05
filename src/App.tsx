@@ -5,13 +5,11 @@ import SignIn from "./components/Auth/login";
 import NavbarLayout from "./components/layout/NavbarLayout";
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path='/login' component={SignIn} />
-        <Route path='/createaccount' component={SignUp} />
-        <Route path='/' component={NavbarLayout} />
-      </Switch>
-    </Router>
+    <Switch>
+      <Route path='/login' component={SignIn} />
+      <Route path='/createaccount' component={SignUp} />
+      <Route path='/' component={NavbarLayout} />
+    </Switch>
   );
 }
 

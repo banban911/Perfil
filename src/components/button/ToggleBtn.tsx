@@ -24,7 +24,8 @@ function ButtonToggleTheme() {
       style={ButtonToggleThemeStyle}
       onClick={handleThemeToggle}
     >
-      {theme === "primary" ? <DarkModeIcon /> : <LightModeIcon />}
+      {theme === "primary" ? "Date" : "Hate"}
+      {/*<DarkModeIcon /> : <LightModeIcon />*/}
     </Fab>
   );
 }

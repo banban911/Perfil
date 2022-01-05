@@ -82,7 +82,16 @@ export default function CardProject(props: any) {
             <div className='techIncluded'>
               {techs.map((tech: string, index: number) => (
                 <IconButton key={index}>
-                  <img src={tech} alt='techs' />
+                  <div
+                    style={{
+                      backgroundImage: `url(${tech})`,
+                      backgroundSize: "cover",
+                      maxWidth: "60px",
+                      maxHeight: "60px",
+                      minWidth: "45px",
+                      minHeight: "45px",
+                    }}
+                  ></div>
                 </IconButton>
               ))}
             </div>
@@ -90,7 +99,10 @@ export default function CardProject(props: any) {
             <a href={sourceCode}>
               <Button variant='contained'>Source code</Button>
             </a>
-            <Typography sx={{ margin: "1rem 0" }}>{drawback}</Typography>
+            <Typography sx={{ margin: "1rem 0" }}>
+              <strong>Backlash: </strong>
+              {drawback}
+            </Typography>
           </CardContent>
         </Collapse>
       </Card>
