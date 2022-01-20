@@ -26,7 +26,7 @@ const cardMedia: cardMediaProps[] = [
     ],
     link: "https://banban911.github.io/Jogue/",
     description:
-      "Inspired by tutorial of Mr.Son Dang, founder of F8, this simple mobile-designed product provides user with basic functions of a music app named as play, back or forward song in playlist.",
+      "Inspired by tutorial of Mr.Son Dang, founder of F8, this product provides user with basic functions of a streaming music named as play back / forward or play random / loop song in the exited list. For uncomercially personal purpose only!",
     sourceCode: "https://github.com/banban911/Jogue",
     drawback: "Music source taken from no API, just hard-code",
     functions: "",
